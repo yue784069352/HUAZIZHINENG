@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timg.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="ydb-Tc-yiD">
+                                <rect key="frame" x="0.0" y="249" width="375" height="284"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiY-Az-gF3">
+                                <rect key="frame" x="0.0" y="541" width="125" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="FO8-JU-Rd2"/>
+                                </constraints>
+                                <state key="normal" title="点击录音"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXU-AB-m72">
+                                <rect key="frame" x="125" y="541" width="125" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="停止录音"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="想说啥就说啥O(∩_∩)O哈哈~" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2cJ-FR-S1O">
+                                <rect key="frame" x="0.0" y="79" width="375" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="tzh-aD-FRc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APg-1c-Lui">
+                                <rect key="frame" x="250" y="541" width="125" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="取消录音"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kD8-zF-tBa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="hPq-NW-agh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="华     仔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8Y-iL-TV0">
+                                <rect key="frame" x="159" y="22" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92146831750000002" green="0.92162626979999995" blue="0.92145836349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vXU-AB-m72" firstAttribute="width" secondItem="xiY-Az-gF3" secondAttribute="width" id="3kW-ni-nsL"/>
+                            <constraint firstItem="APg-1c-Lui" firstAttribute="leading" secondItem="vXU-AB-m72" secondAttribute="trailing" id="92a-m2-zAz"/>
+                            <constraint firstItem="l8Y-iL-TV0" firstAttribute="centerY" secondItem="kD8-zF-tBa" secondAttribute="centerY" id="G8G-6y-Vwp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ydb-Tc-yiD" secondAttribute="bottom" constant="134" id="Imp-0b-Dvi"/>
+                            <constraint firstAttribute="trailing" secondItem="kD8-zF-tBa" secondAttribute="trailing" id="L0A-Pa-MTb"/>
+                            <constraint firstItem="2cJ-FR-S1O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Oix-gt-yaM"/>
+                            <constraint firstItem="APg-1c-Lui" firstAttribute="height" secondItem="xiY-Az-gF3" secondAttribute="height" id="RBt-gW-9TI"/>
+                            <constraint firstItem="vXU-AB-m72" firstAttribute="leading" secondItem="xiY-Az-gF3" secondAttribute="trailing" id="Tbb-2D-32V"/>
+                            <constraint firstItem="kD8-zF-tBa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UDI-ea-qVt"/>
+                            <constraint firstAttribute="trailing" secondItem="ydb-Tc-yiD" secondAttribute="trailing" id="UQr-a4-COW"/>
+                            <constraint firstAttribute="trailing" secondItem="APg-1c-Lui" secondAttribute="trailing" id="XmZ-fD-dKd"/>
+                            <constraint firstItem="ydb-Tc-yiD" firstAttribute="top" secondItem="2cJ-FR-S1O" secondAttribute="bottom" constant="20" id="bMf-ge-cAd"/>
+                            <constraint firstItem="xiY-Az-gF3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ekt-Lo-vXX"/>
+                            <constraint firstItem="xiY-Az-gF3" firstAttribute="top" secondItem="ydb-Tc-yiD" secondAttribute="bottom" constant="8" id="fkT-mc-HVj"/>
+                            <constraint firstItem="APg-1c-Lui" firstAttribute="top" secondItem="ydb-Tc-yiD" secondAttribute="bottom" constant="8" id="gjr-9y-x8P"/>
+                            <constraint firstAttribute="trailing" secondItem="2cJ-FR-S1O" secondAttribute="trailing" id="goY-42-M1M"/>
+                            <constraint firstItem="APg-1c-Lui" firstAttribute="width" secondItem="xiY-Az-gF3" secondAttribute="width" id="kWM-Ns-8Hy"/>
+                            <constraint firstItem="APg-1c-Lui" firstAttribute="leading" secondItem="vXU-AB-m72" secondAttribute="trailing" id="pUC-Bj-uV6"/>
+                            <constraint firstItem="vXU-AB-m72" firstAttribute="top" secondItem="ydb-Tc-yiD" secondAttribute="bottom" constant="8" id="rRH-tQ-kVn"/>
+                            <constraint firstItem="kD8-zF-tBa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uKW-x4-Op6"/>
+                            <constraint firstItem="vXU-AB-m72" firstAttribute="leading" secondItem="xiY-Az-gF3" secondAttribute="trailing" id="vBP-Ec-ute"/>
+                            <constraint firstItem="ydb-Tc-yiD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xG9-N7-zP6"/>
+                            <constraint firstItem="vXU-AB-m72" firstAttribute="height" secondItem="xiY-Az-gF3" secondAttribute="height" id="xUY-Mt-3us"/>
+                            <constraint firstItem="2cJ-FR-S1O" firstAttribute="top" secondItem="kD8-zF-tBa" secondAttribute="bottom" constant="15" id="yAR-tL-ehz"/>
+                            <constraint firstItem="l8Y-iL-TV0" firstAttribute="centerX" secondItem="kD8-zF-tBa" secondAttribute="centerX" id="ysC-Xw-Q0K"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58" y="114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="timg.jpeg" width="960" height="638"/>
+    </resources>
+</document>

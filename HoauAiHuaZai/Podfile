@@ -1,0 +1,9 @@
+target "HoauAiHuaZai" do
+platform :ios, '7.0'
+pod 'AFNetworking',  '~> 2.0'
+pod 'MJRefresh', '~> 3.0.7'
+pod 'BaiduMapKit' #百度地图SDK
+pod "Reachability"
+pod "SDWebImage"
+end
+
